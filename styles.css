@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.user-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-box img {
+  border-radius: 50%;
+  width: 350px;
+  border: 2px solid #6caed5;
+}
+
+.user-box h1 {
+  color: white;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.user-box p {
+  color: white;
+}
+.scroll-btn {
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ffffff;
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+
+.scroll-bar span {
+  border: 2px solid white;
+  font-size: 10px;
+  border-radius: 30px;
+}
+
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+
+.nav-bar ul li a:hover {
+  font-weight: 600;
+  transition: 0.2s;
+  color: white;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* ABOUT */
+.about {
+  padding-top: 100px;
+}
+
+.profile-pic {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-bar .fa-bars {
+  color: white;
+  font-size: 35px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.navbar-nav {
+  float: right;
+  text-align: right;
+}
+
+.progress-bar {
+  background: black;
+}
+
+.classes-taught {
+  font-size: 1px;
+}
+
+/* RESUME */
+.resume {
+  margin-top: -180px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
+}
+
+.resume h3 {
+  margin-bottom: 50px;
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  background: black;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 2px;
+  left: 29px;
+}
+
+.timeline li {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.timeline h4 {
+  background: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px 0 5px 20px;
+}
+
+.timeline h4 span {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+.timeline li:before {
+  content: "";
+  background: #ffffff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+}
+
+.about .col-md-5 p {
+  font-size: 13.5px;
+}
+
+.current-classes,
+.previous-classes {
+  font-size: 12px;
+}
+
+/* FOOTER */
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 50px 0px;
+  border: 2px solid black;
+}
+
+.contact .row {
+  padding: 30px 0px;
+  font-size: 22px;
+}
+
+.contact .col-md-4 .fa {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.contact .btn {
+  padding: 10px 25px;
+  margin: 5px;
+  background: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.contact .btn:hover {
+  background: black;
+  border: 2px solid black;
+  transition: 1.3s;
+}
+
+/* SOCIAL ICONS */
+.social-icons ul {
+  list-style: none;
+  padding: initial;
+}
+
+.social-icons {
+  top: 50%;
+  transform: translateY(-50%);
+  position: sticky;
+  z-index: 1;
+  width: 80px;
+}
+
+.social-icons ul li {
+  padding: initial;
+  height: 40px;
+  width: 40px;
+  padding-left: 12px;
+  padding-top: 6px;
+  margin-top: 5px;
+  background: #000000;
+}
+
+.social-icons a {
+  color: #ffffff;
+}
+
+.social-icons ul li:hover {
+  padding-left: 40px;
+  width: 80px;
+  transition: 1s;
+}
+
+/* View Project Customization */
+.view-project {
+  float: right;
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+}
+
+.view-project a {
+  color: white;
+}
+
+.view-project a:hover {
+  color: white;
+  font-weight: 600;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Pig-Game instruction link */
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a span {
+  color: blue;
+  text-decoration: underline;
+}
+@media (max-width: 720px) {
+  .social-icons {
+    visibility: hidden;
+  }
+  #howdy {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .timeline:before {
+    display: none;
+  }
+
+  .timeline li:before {
+    display: none;
+  }
+
+  .timeline {
+    padding: 0;
+  }
+}
